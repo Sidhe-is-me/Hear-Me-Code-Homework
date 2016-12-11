@@ -49,7 +49,7 @@ twitter = "@hearmecode"
 ##    print "TA's are great"
 ##
 
-cur_vol = 80
+cur_vol = 90
 goal = 100
 vol_needed = goal - cur_vol 
 if cur_vol > goal:
