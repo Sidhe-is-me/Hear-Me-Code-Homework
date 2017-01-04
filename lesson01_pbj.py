@@ -12,13 +12,13 @@ print "Peanut butter Jelly Time!"
 # Fourth Goal: Create a program to tell you: if you're missing ingredients, which ones you need to be able to make your sandwiches
 
 # Fifth Goal: Create a program to tell you: if you have enough bread and peanut butter but no jelly, that you can make a peanut butter sandwich but you should take a hard, honest look at your life.  Wow, your program is kinda judgy.
-bread="4"
-pb="2"
-jelly="2"
+#bread = 5
+#peanutButter = 5
+#jelly = 2
 
 #Greeting
 
-print("Welcome \nThe answer to the question everyone wants to know... \nCan YOU make a PB&J sandwich?")
+print("Welcome \Can YOU make a PB&J sandwich?")
 
 
 # What are the step-by-steps to recreate this?
@@ -26,11 +26,14 @@ print("Welcome \nThe answer to the question everyone wants to know... \nCan YOU 
 
 # You need three ingredients to make a PB&J, so you'll want three different variables:
 # 		How much bread do you have? (make this a number that reflects how many slices of bread you have)
-bread="6"
+
+
+bread = 3
+
 #		How much peanut butter do you have? (make this a number that reflects how many sandwiches-worth of peanut butter you have)
-peanutButter="9"
+peanutButter = 7
 #		How much jelly do you have? (make this a number that reflects how many sandwiches-worth of jelly you have)
-jelly="7"
+jelly = 3
 
 
 # For this exercise, we'll assume you have the requisite tools (plate, knife, etc)
@@ -41,19 +44,34 @@ jelly="7"
 
 # To satisfy the first goal:
 #		If you have enough bread (2 slices), peanut butter (1), and jelly (1), print a message like "I can make a peanut butter and jelly sandwich";
+
+
 if bread>=2 and peanutButter >= 1 and jelly >= 1:
         print ("I can make a peanut butter and jelly sandwich")
 else:
         print ("Looks like I don't have a lunch today :(")
-#If you don't; print a message like "Looks like I don't have a lunch today"
-
-# To satisfy the second goal:
+#second Goal
+        # To satisfy the second goal:
 #		Continue from the first goal, and add:
 #		If you have enough bread (at least 2 slices), peanut butter (at least 1), and jelly (at least 1), print a message like "I can make this many sandwiches: " and then calculate the result.
 #		If you don't; you can print the same message as before
 #   To calculate which ingredient you have the least of, the min() function will be useful.
 #   min() will calculate the smallest number of all of the numbers in the parentheses and tell you which it is
 #   For example, min(4, 83, 6) will return 4
+#If you don't; print a message like "Looks like I don't have a lunch today"
+
+maxbread = bread//2;
+maxpeanutButter =  peanutButter;
+maxjelly = jelly;
+
+maxsandwich = min(maxbread, maxpeanutButter, maxjelly);
+if maxsandwich>=1:
+        print "I can make this many sandwiches:", maxsandwich;
+else :
+        print "No sandwich for you";
+
+print maxsandwich % 2
+
 
 # To satisfy the third goal:
 #		Continue from the second goal, and add:
