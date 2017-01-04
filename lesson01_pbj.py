@@ -28,7 +28,7 @@ print("Welcome \Can YOU make a PB&J sandwich?")
 # 		How much bread do you have? (make this a number that reflects how many slices of bread you have)
 
 
-bread = 3
+bread = 4
 
 #		How much peanut butter do you have? (make this a number that reflects how many sandwiches-worth of peanut butter you have)
 peanutButter = 7
