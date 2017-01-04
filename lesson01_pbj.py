@@ -28,12 +28,11 @@ print("Welcome \Can YOU make a PB&J sandwich?")
 # 		How much bread do you have? (make this a number that reflects how many slices of bread you have)
 
 
-bread = 3
-
+bread = 11
 #		How much peanut butter do you have? (make this a number that reflects how many sandwiches-worth of peanut butter you have)
-peanutButter = 7
+peanutButter = 10
 #		How much jelly do you have? (make this a number that reflects how many sandwiches-worth of jelly you have)
-jelly = 3
+jelly = 10
 
 
 # For this exercise, we'll assume you have the requisite tools (plate, knife, etc)
@@ -71,8 +70,8 @@ else :
         print "No sandwich for you";
 ##if maxsandwich % 2
 
-print maxsandwich % 2
-print  hi
+openface = maxsandwich % 2
+print  "How Many OpenFace sandwiches can I make;",openface;
 
 
 # To satisfy the third goal:
