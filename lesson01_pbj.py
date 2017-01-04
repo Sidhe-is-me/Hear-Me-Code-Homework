@@ -69,8 +69,10 @@ if maxsandwich>=1:
         print "I can make this many sandwiches:", maxsandwich;
 else :
         print "No sandwich for you";
+##if maxsandwich % 2
 
 print maxsandwich % 2
+print  hi
 
 
 # To satisfy the third goal:
