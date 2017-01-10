@@ -12,7 +12,9 @@ print "Peanut butter Jelly Time!"
 # Fourth Goal: Create a program to tell you: if you're missing ingredients, which ones you need to be able to make your sandwiches
 
 # Fifth Goal: Create a program to tell you: if you have enough bread and peanut butter but no jelly, that you can make a peanut butter sandwich but you should take a hard, honest look at your life.  Wow, your program is kinda judgy.
-
+#bread = 5
+#peanutButter = 5
+#jelly = 2
 
 #Greeting
 
@@ -26,11 +28,11 @@ print("Welcome \Can YOU make a PB&J sandwich?")
 # 		How much bread do you have? (make this a number that reflects how many slices of bread you have)
 
 
-bread = 11
+bread = 13
 #		How much peanut butter do you have? (make this a number that reflects how many sandwiches-worth of peanut butter you have)
-peanutButter = 13
+peanutButter = 10
 #		How much jelly do you have? (make this a number that reflects how many sandwiches-worth of jelly you have)
-jelly = 3
+jelly = 10
 
 
 # For this exercise, we'll assume you have the requisite tools (plate, knife, etc)
@@ -41,14 +43,12 @@ jelly = 3
 
 # To satisfy the first goal:
 #		If you have enough bread (2 slices), peanut butter (1), and jelly (1), print a message like "I can make a peanut butter and jelly sandwich";
-print "First Goal"
+
 
 if bread>=2 and peanutButter >= 1 and jelly >= 1:
         print ("I can make a peanut butter and jelly sandwich")
 else:
         print ("Looks like I don't have a lunch today :(")
-
-print "Second Goal"
 #second Goal
         # To satisfy the second goal:
 #		Continue from the first goal, and add:
@@ -68,45 +68,21 @@ if maxsandwich>=1:
         print "I can make this many sandwiches:", maxsandwich;
 else :
         print "No sandwich for you";
+##if maxsandwich % 2
+
+openface = maxsandwich % 2
+print  "How Many OpenFace sandwiches can I make;",openface;
+
+
 # To satisfy the third goal:
 #		Continue from the second goal, and add:
 #		If you have an odd number of slices of bread* and odd amount of peanut butter and jelly, print a message like before, but mention that you can make an open-face sandwich, too.
 #		If you don't have enough ingredients; still print the same message as before
 #		* To calculate whether you have an odd number, see https://github.com/shannonturner/python-lessons/blob/master/section_01_(basics)/simple_math.py
-print"Third Goal"
-
-openface = maxsandwich % 2
-print  "How Many Openface sandwiches can I make;",openface;
-
-oddpeanutButter = peanutButter %2
-oddjelly = jelly %2 
-
-if oddpeanutButter == 1  and openface == 1 and oddjelly == 1:
-        print   "You can make an openface sandwich with peanut butter and Jelly!"
-else:
-        print "No open face sandwich for you!";
-        
 
 # To satisfy the fourth goal:
 #		Continue from the third goal, but this time if you have enough bread and peanut butter but no jelly, print a message that tells you that you can make a peanut butter sandwich
 #		Or if you have more peanut butter and bread than jelly, that you can make a certain number of peanut butter & jelly sandwiches and a certain number of peanut butter sandwiches
-print "Fourth Goal"
-maxpbsandwich = min(maxbread,maxpeanutButter)
- 
-if maxsandwich>= 1:
-        print "I can make this many PB&J sandwiches: ", maxsandwich, " and this many PB only sandwiches: ", maxpbsandwich - maxsandwich;
-else :
-        print "I can make only PB sandwiches in amount of: ", maxpbsandwich;
-        
 
-print "fifth goal"
 # To satisfy the fifth goal:
 #		Continue from the fourth goal, but this time if you don't have enough ingredients, print a message that tells you which ones you're missing.
-print "You ran out of: "
-if maxbread == maxsandwich:
-        print "bread.";
-if maxpeanutButter == maxsandwich:
-        print "PB.";
-if maxjelly == maxsandwich:
-        print "jelly.";
-
